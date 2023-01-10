@@ -1,0 +1,46 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #bb2649;
+}
+
+#clock{
+    position: relative;
+    border-radius: 50%;
+    border: solid #fff 2px;
+    height: 50vh;
+    width: 50vh;
+    left: 50%;
+    margin-top: 50vh;
+    transform: translate(-50%, -50%);   
+}
+
+#seconds{
+    position: absolute;
+    font-size: 5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-87.7%, -58%);
+    transform-origin: 87.7% 58%;
+}
+
+#minutes{
+    position: absolute;
+    font-size: 5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45.4%, -58%);
+    transform-origin: 45.4% 58%;
+}
+
+#hours{
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -230%) rotateZ(0deg);
+    transform-origin: 50% 230%;
+}
