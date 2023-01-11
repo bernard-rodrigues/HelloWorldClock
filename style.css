@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: linear-gradient(to right, #000, #bb2649, #000);
+    background-image: radial-gradient(#bb2649, #000);
 }
 
 #container{
@@ -38,6 +38,7 @@ body{
     transform: translate(-50%, -50%);
     transform-origin: center;
     transition: height 0.5s, width 0.5s;
+    background-image: radial-gradient(#000, #bb2649);
 }
 
 #seconds{
@@ -72,7 +73,7 @@ body{
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-image: linear-gradient(to right, #000, #bb2649, #000);
+    background-image: radial-gradient(#000, #bb2649);
     left: 50%;
     top: 50%;
     transform-origin: 50% 1400%;
@@ -83,7 +84,7 @@ body{
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 50%;
-    background-image: linear-gradient(to right, #000, #bb2649, #000);
+    background-image: radial-gradient(#000, #bb2649);
     left: 50%;
     top: 50%;
     transform-origin: 50% 2700%;
