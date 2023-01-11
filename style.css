@@ -1,21 +1,43 @@
 *{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 body{
-    background-color: #bb2649;
+    background-image: linear-gradient(to right, #000, #bb2649, #000);
+}
+
+#container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#outer-clock{
+    position: absolute;
+    border: #fff 2px dashed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: calc(50vh + 2rem);
+    width: calc(50vh + 2rem);
 }
 
 #clock{
-    position: relative;
+    position: absolute;
     border-radius: 50%;
-    border: solid #fff 2px;
+    border: solid #fff 3px;
     height: 50vh;
     width: 50vh;
     left: 50%;
-    margin-top: 50vh;
-    transform: translate(-50%, -50%);   
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    transition: height 0.5s, width 0.5s;
 }
 
 #seconds{
@@ -43,4 +65,74 @@ body{
     top: 50%;
     transform: translate(-50%, -230%) rotateZ(0deg);
     transform-origin: 50% 230%;
+}
+
+.primary{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #000, #bb2649, #000);
+    left: 50%;
+    top: 50%;
+    transform-origin: 50% 1400%;
+}
+
+.secondary{
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #000, #bb2649, #000);
+    left: 50%;
+    top: 50%;
+    transform-origin: 50% 2700%;
+}
+
+#marker1{
+    transform: translate(-50%, -2700%) rotate(30deg);
+}
+
+#marker2{
+    transform: translate(-50%, -2700%) rotate(60deg);
+}
+
+#marker3{
+    transform: translate(-50%, -1400%) rotate(90deg);
+}
+
+#marker4{
+    transform: translate(-50%, -2700%) rotate(120deg);
+}
+
+#marker5{
+    transform: translate(-50%, -2700%) rotate(150deg);
+}
+
+#marker6{
+    transform: translate(-50%, -1400%) rotate(180deg);
+}
+
+#marker7{
+    transform: translate(-50%, -2700%) rotate(210deg);
+}
+
+#marker8{
+    transform: translate(-50%, -2700%) rotate(240deg);
+}
+
+#marker9{
+    transform: translate(-50%, -1400%) rotate(270deg);
+}
+
+#marker10{
+    transform: translate(-50%, -2700%) rotate(300deg);
+}
+
+#marker11{
+    transform: translate(-50%, -2700%) rotate(330deg);
+}
+
+#marker12{
+    transform: translate(-50%, -1400%) rotate(0deg);
 }
