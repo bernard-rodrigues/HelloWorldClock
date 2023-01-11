@@ -3,10 +3,11 @@
     color: #fff;
     -webkit-font-smoothing: antialiased;
     margin: 0;
+    padding: 0;
 }
 
 body{
-    background-image: radial-gradient(#bb2649, #000);
+    background-image: radial-gradient(#bb2649, #950033);
 }
 
 #container{
@@ -23,27 +24,27 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    height: calc(50vh + 2rem);
-    width: calc(50vh + 2rem);
+    height: calc(80vh);
+    width: calc(80vh);
 }
 
 #clock{
     position: absolute;
     border-radius: 50%;
     border: solid #fff 3px;
-    height: 50vh;
-    width: 50vh;
+    height: 75vh;
+    width: 75vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     transform-origin: center;
     transition: height 0.5s, width 0.5s;
-    background-image: radial-gradient(#000, #bb2649);
+    background-color: #bb2649;
 }
 
 #seconds{
     position: absolute;
-    font-size: 5rem;
+    font-size: 12vh;
     left: 50%;
     top: 50%;
     transform: translate(-87.7%, -58%);
@@ -52,7 +53,7 @@ body{
 
 #minutes{
     position: absolute;
-    font-size: 5rem;
+    font-size: 12vh;
     left: 50%;
     top: 50%;
     transform: translate(-45.4%, -58%);
@@ -60,7 +61,7 @@ body{
 }
 
 #hours{
-    font-size: 5rem;
+    font-size: 12vh;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -76,7 +77,7 @@ body{
     background-image: radial-gradient(#000, #bb2649);
     left: 50%;
     top: 50%;
-    transform-origin: 50% 1400%;
+    transform-origin: 50% 35vh;
 }
 
 .secondary{
@@ -87,53 +88,463 @@ body{
     background-image: radial-gradient(#000, #bb2649);
     left: 50%;
     top: 50%;
-    transform-origin: 50% 2700%;
+    transform-origin: 50% 35vh;
 }
 
 #marker1{
-    transform: translate(-50%, -2700%) rotate(30deg);
+    transform: translate(-50%, -35vh) rotate(30deg);
 }
 
 #marker2{
-    transform: translate(-50%, -2700%) rotate(60deg);
+    transform: translate(-50%, -35vh) rotate(60deg);
 }
 
 #marker3{
-    transform: translate(-50%, -1400%) rotate(90deg);
+    transform: translate(-50%, -35vh) rotate(90deg);
 }
 
 #marker4{
-    transform: translate(-50%, -2700%) rotate(120deg);
+    transform: translate(-50%, -35vh) rotate(120deg);
 }
 
 #marker5{
-    transform: translate(-50%, -2700%) rotate(150deg);
+    transform: translate(-50%, -35vh) rotate(150deg);
 }
 
 #marker6{
-    transform: translate(-50%, -1400%) rotate(180deg);
+    transform: translate(-50%, -35vh) rotate(180deg);
 }
 
 #marker7{
-    transform: translate(-50%, -2700%) rotate(210deg);
+    transform: translate(-50%, -35vh) rotate(210deg);
 }
 
 #marker8{
-    transform: translate(-50%, -2700%) rotate(240deg);
+    transform: translate(-50%, -35vh) rotate(240deg);
 }
 
 #marker9{
-    transform: translate(-50%, -1400%) rotate(270deg);
+    transform: translate(-50%, -35vh) rotate(270deg);
 }
 
 #marker10{
-    transform: translate(-50%, -2700%) rotate(300deg);
+    transform: translate(-50%, -35vh) rotate(300deg);
 }
 
 #marker11{
-    transform: translate(-50%, -2700%) rotate(330deg);
+    transform: translate(-50%, -35vh) rotate(330deg);
 }
 
 #marker12{
-    transform: translate(-50%, -1400%) rotate(0deg);
+    transform: translate(-50%, -35vh) rotate(0deg);
+}
+
+#title{
+    position: fixed;
+    left: 10vh;
+    top: 10vh;
+}
+
+#title p{
+    font-size: 3vh;
+}
+
+#title p:first-child{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#digital{
+    position: fixed;
+    right: 10vh;
+    bottom: 10vh;
+    font-size: 15vh;
+}
+
+@media only screen and (max-width: 1199px){
+    #outer-clock{
+        border-radius: 50%;
+        height: calc(70vh);
+        width: calc(70vh);
+    }
+    
+    #clock{
+        height: 65vh;
+        width: 65vh;
+    }
+    
+    #seconds{
+        font-size: 10vh;
+    }
+    
+    #minutes{
+        font-size: 10vh;
+    }
+    
+    #hours{
+        font-size: 10vh;
+    }
+    
+    .primary{
+        transform-origin: 50% 30vh;
+    }
+    
+    .secondary{
+        transform-origin: 50% 30vh;
+    }
+
+    #marker1{
+        transform: translate(-50%, -30vh) rotate(30deg);
+    }
+    
+    #marker2{
+        transform: translate(-50%, -30vh) rotate(60deg);
+    }
+    
+    #marker3{
+        transform: translate(-50%, -30vh) rotate(90deg);
+    }
+    
+    #marker4{
+        transform: translate(-50%, -30vh) rotate(120deg);
+    }
+    
+    #marker5{
+        transform: translate(-50%, -30vh) rotate(150deg);
+    }
+    
+    #marker6{
+        transform: translate(-50%, -30vh) rotate(180deg);
+    }
+    
+    #marker7{
+        transform: translate(-50%, -30vh) rotate(210deg);
+    }
+    
+    #marker8{
+        transform: translate(-50%, -30vh) rotate(240deg);
+    }
+    
+    #marker9{
+        transform: translate(-50%, -30vh) rotate(270deg);
+    }
+    
+    #marker10{
+        transform: translate(-50%, -30vh) rotate(300deg);
+    }
+    
+    #marker11{
+        transform: translate(-50%, -30vh) rotate(330deg);
+    }
+    
+    #marker12{
+        transform: translate(-50%, -30vh) rotate(0deg);
+    }
+
+    #title{
+        left: 8vh;
+        top: 8vh;
+    }
+    
+    #title p{
+        font-size: 3vh;
+    }
+    
+    #digital{
+        position: fixed;
+        right: 8vh;
+        bottom: 8vh;
+        font-size: 12vh;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #outer-clock{
+        border-radius: 50%;
+        height: calc(60vh);
+        width: calc(60vh);
+    }
+    
+    #clock{
+        height: 55vh;
+        width: 55vh;
+    }
+    
+    #seconds{
+        font-size: 8vh;
+    }
+    
+    #minutes{
+        font-size: 8vh;
+    }
+    
+    #hours{
+        font-size: 8vh;
+    }
+    
+    .primary{
+        transform-origin: 50% 25vh;
+    }
+    
+    .secondary{
+        transform-origin: 50% 25vh;
+    }
+
+    #marker1{
+        transform: translate(-50%, -25vh) rotate(30deg);
+    }
+    
+    #marker2{
+        transform: translate(-50%, -25vh) rotate(60deg);
+    }
+    
+    #marker3{
+        transform: translate(-50%, -25vh) rotate(90deg);
+    }
+    
+    #marker4{
+        transform: translate(-50%, -25vh) rotate(120deg);
+    }
+    
+    #marker5{
+        transform: translate(-50%, -25vh) rotate(150deg);
+    }
+    
+    #marker6{
+        transform: translate(-50%, -25vh) rotate(180deg);
+    }
+    
+    #marker7{
+        transform: translate(-50%, -25vh) rotate(210deg);
+    }
+    
+    #marker8{
+        transform: translate(-50%, -25vh) rotate(240deg);
+    }
+    
+    #marker9{
+        transform: translate(-50%, -25vh) rotate(270deg);
+    }
+    
+    #marker10{
+        transform: translate(-50%, -25vh) rotate(300deg);
+    }
+    
+    #marker11{
+        transform: translate(-50%, -25vh) rotate(330deg);
+    }
+    
+    #marker12{
+        transform: translate(-50%, -25vh) rotate(0deg);
+    }
+
+    #title{
+        left: 8vh;
+        top: 8vh;
+    }
+    
+    #title p{
+        font-size: 2.5vh;
+    }
+    
+    #digital{
+        position: fixed;
+        right: 8vh;
+        bottom: 8vh;
+        font-size: 9vh;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #outer-clock{
+        border-radius: 50%;
+        height: calc(50vh);
+        width: calc(50vh);
+    }
+    
+    #clock{
+        height: 45vh;
+        width: 45vh;
+    }
+    
+    #seconds{
+        font-size: 6vh;
+    }
+    
+    #minutes{
+        font-size: 6vh;
+    }
+    
+    #hours{
+        font-size: 6vh;
+    }
+    
+    .primary{
+        transform-origin: 50% 20vh;
+    }
+    
+    .secondary{
+        transform-origin: 50% 20vh;
+    }
+
+    #marker1{
+        transform: translate(-50%, -20vh) rotate(30deg);
+    }
+    
+    #marker2{
+        transform: translate(-50%, -20vh) rotate(60deg);
+    }
+    
+    #marker3{
+        transform: translate(-50%, -20vh) rotate(90deg);
+    }
+    
+    #marker4{
+        transform: translate(-50%, -20vh) rotate(120deg);
+    }
+    
+    #marker5{
+        transform: translate(-50%, -20vh) rotate(150deg);
+    }
+    
+    #marker6{
+        transform: translate(-50%, -20vh) rotate(180deg);
+    }
+    
+    #marker7{
+        transform: translate(-50%, -20vh) rotate(210deg);
+    }
+    
+    #marker8{
+        transform: translate(-50%, -20vh) rotate(240deg);
+    }
+    
+    #marker9{
+        transform: translate(-50%, -20vh) rotate(270deg);
+    }
+    
+    #marker10{
+        transform: translate(-50%, -20vh) rotate(300deg);
+    }
+    
+    #marker11{
+        transform: translate(-50%, -20vh) rotate(330deg);
+    }
+    
+    #marker12{
+        transform: translate(-50%, -20vh) rotate(0deg);
+    }
+
+    #title{
+        left: 8vh;
+        top: 8vh;
+    }
+    
+    #title p{
+        font-size: 3vh;
+    }
+    
+    #digital{
+        position: fixed;
+        right: 8vh;
+        bottom: 8vh;
+        font-size: 10vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #outer-clock{
+        border-radius: 50%;
+        height: calc(80vw);
+        width: calc(80vw);
+    }
+    
+    #clock{
+        height: 75vw;
+        width: 75vw;
+    }
+    
+    #seconds{
+        font-size: 12vw;
+    }
+    
+    #minutes{
+        font-size: 12vw;
+    }
+    
+    #hours{
+        font-size: 12vw;
+    }
+    
+    .primary{
+        transform-origin: 50% 35vw;
+    }
+    
+    .secondary{
+        transform-origin: 50% 35vw;
+    }
+
+    #marker1{
+        transform: translate(-50%, -35vw) rotate(30deg);
+    }
+    
+    #marker2{
+        transform: translate(-50%, -35vw) rotate(60deg);
+    }
+    
+    #marker3{
+        transform: translate(-50%, -35vw) rotate(90deg);
+    }
+    
+    #marker4{
+        transform: translate(-50%, -35vw) rotate(120deg);
+    }
+    
+    #marker5{
+        transform: translate(-50%, -35vw) rotate(150deg);
+    }
+    
+    #marker6{
+        transform: translate(-50%, -35vw) rotate(180deg);
+    }
+    
+    #marker7{
+        transform: translate(-50%, -35vw) rotate(210deg);
+    }
+    
+    #marker8{
+        transform: translate(-50%, -35vw) rotate(240deg);
+    }
+    
+    #marker9{
+        transform: translate(-50%, -35vw) rotate(270deg);
+    }
+    
+    #marker10{
+        transform: translate(-50%, -35vw) rotate(300deg);
+    }
+    
+    #marker11{
+        transform: translate(-50%, -35vw) rotate(330deg);
+    }
+    
+    #marker12{
+        transform: translate(-50%, -35vw) rotate(0deg);
+    }
+
+    #title{
+        left: 10vw;
+        top: 15vw;
+    }
+    
+    #title p{
+        font-size: 5vw;
+    }
+    
+    #digital{
+        position: fixed;
+        right: 10vw;
+        bottom: 15vw;
+        font-size: 8vh;
+    }
 }
